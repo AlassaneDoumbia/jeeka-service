@@ -1,0 +1,530 @@
+{
+	"info": {
+		"_postman_id": "c48e2d35-0018-41a2-9000-727d896ee112",
+		"name": "Jeeka",
+		"description": "Listes des requêtes mise en place",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15531957"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "get-all-users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb3VtYmlhbGFzc2FuZTEwQGdtYWlsLmNvbSIsImlhdCI6MTcwNDcyNDc4NH0.RBfvGnNuasG2rBEOYDDmBrYIujHlFNfkXpvbOm_9laSyAHAtp3LbmN-FYEjnj53tjBChf5Nq6PbQ7hv3OE5ZQw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8095/entrepreneurship/api/user/get-all-users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"entrepreneurship",
+								"api",
+								"user",
+								"get-all-users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb3VtYmlhbGFzc2FuZTEwQGdtYWlsLmNvbSIsImlhdCI6MTcwNDcyNDc4NH0.RBfvGnNuasG2rBEOYDDmBrYIujHlFNfkXpvbOm_9laSyAHAtp3LbmN-FYEjnj53tjBChf5Nq6PbQ7hv3OE5ZQw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8095/entrepreneurship/api/user/get-user?username=souleymanesidibe1995@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"entrepreneurship",
+								"api",
+								"user",
+								"get-user"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "souleymanesidibe1995@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset-forgoten-password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb3VtYmlhbGFzc2FuZTEwQGdtYWlsLmNvbSIsImlhdCI6MTcwNDcyNDc4NH0.RBfvGnNuasG2rBEOYDDmBrYIujHlFNfkXpvbOm_9laSyAHAtp3LbmN-FYEjnj53tjBChf5Nq6PbQ7hv3OE5ZQw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8095/entrepreneurship/api/user/reset-forgoten-password?username=souleymanesidibe1995@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"entrepreneurship",
+								"api",
+								"user",
+								"reset-forgoten-password"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "souleymanesidibe1995@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-user-status",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb3VtYmlhbGFzc2FuZTEwQGdtYWlsLmNvbSIsImlhdCI6MTcwNDcyNDc4NH0.RBfvGnNuasG2rBEOYDDmBrYIujHlFNfkXpvbOm_9laSyAHAtp3LbmN-FYEjnj53tjBChf5Nq6PbQ7hv3OE5ZQw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8095/entrepreneurship/api/user/update-user-status?username=souleymanesidibe1995@gmail.com&status=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"entrepreneurship",
+								"api",
+								"user",
+								"update-user-status"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "souleymanesidibe1995@gmail.com"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"description": "0 : désactiver || 1: activer"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change-password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb3VtYmlhbGFzc2FuZTEwQGdtYWlsLmNvbSIsImlhdCI6MTcwNDcyNDc4NH0.RBfvGnNuasG2rBEOYDDmBrYIujHlFNfkXpvbOm_9laSyAHAtp3LbmN-FYEjnj53tjBChf5Nq6PbQ7hv3OE5ZQw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"souleymanesidibe1995@gmail.com\",\n    \"oldpassword\":\"Jeeka@2025\",\n    \"newpassword\":\"Jeeka@2024\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8095/entrepreneurship/api/user/change-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"entrepreneurship",
+								"api",
+								"user",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-skill-user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb3VtYmlhbGFzc2FuZTEwQGdtYWlsLmNvbSIsImlhdCI6MTcwNDcyNDc4NH0.RBfvGnNuasG2rBEOYDDmBrYIujHlFNfkXpvbOm_9laSyAHAtp3LbmN-FYEjnj53tjBChf5Nq6PbQ7hv3OE5ZQw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"souleymanesidibe1995@gmail.com\",\n    \"skill\":\"Microsoft Excel\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8095/entrepreneurship/api/user/add-skill-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"entrepreneurship",
+								"api",
+								"user",
+								"add-skill-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove-skill-user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb3VtYmlhbGFzc2FuZTEwQGdtYWlsLmNvbSIsImlhdCI6MTcwNDcyNDc4NH0.RBfvGnNuasG2rBEOYDDmBrYIujHlFNfkXpvbOm_9laSyAHAtp3LbmN-FYEjnj53tjBChf5Nq6PbQ7hv3OE5ZQw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"souleymanesidibe1995@gmail.com\",\n    \"skill\":\"Java\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8095/entrepreneurship/api/user/remove-skill-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"entrepreneurship",
+								"api",
+								"user",
+								"remove-skill-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb3VtYmlhbGFzc2FuZTEwQGdtYWlsLmNvbSIsImlhdCI6MTcwNDcyNDc4NH0.RBfvGnNuasG2rBEOYDDmBrYIujHlFNfkXpvbOm_9laSyAHAtp3LbmN-FYEjnj53tjBChf5Nq6PbQ7hv3OE5ZQw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n    \"id\": \"souleymanesidibe1995@gmail.com\",\n    \"email\": \"souleymanesidibe1995@gmail.com\",\n    \"phone\": \"778578610\",\n    \"firstname\": \"Souleymane\",\n    \"lastname\": \"SIDIBE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8095/entrepreneurship/api/user/update-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"entrepreneurship",
+								"api",
+								"user",
+								"update-user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "skils",
+			"item": [
+				{
+					"name": "get-all-skills",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb3VtYmlhbGFzc2FuZTEwQGdtYWlsLmNvbSIsImlhdCI6MTcwNDcyNDc4NH0.RBfvGnNuasG2rBEOYDDmBrYIujHlFNfkXpvbOm_9laSyAHAtp3LbmN-FYEjnj53tjBChf5Nq6PbQ7hv3OE5ZQw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8095/entrepreneurship/api/skills/get-all-skills",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"entrepreneurship",
+								"api",
+								"skills",
+								"get-all-skills"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-skill",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb3VtYmlhbGFzc2FuZTEwQGdtYWlsLmNvbSIsImlhdCI6MTcwNDcyNDc4NH0.RBfvGnNuasG2rBEOYDDmBrYIujHlFNfkXpvbOm_9laSyAHAtp3LbmN-FYEjnj53tjBChf5Nq6PbQ7hv3OE5ZQw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Microsoft Excel\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8095/entrepreneurship/api/skills/add-skill",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"entrepreneurship",
+								"api",
+								"skills",
+								"add-skill"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-skill",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkb3VtYmlhbGFzc2FuZTEwQGdtYWlsLmNvbSIsImlhdCI6MTcwNDcyNDc4NH0.RBfvGnNuasG2rBEOYDDmBrYIujHlFNfkXpvbOm_9laSyAHAtp3LbmN-FYEjnj53tjBChf5Nq6PbQ7hv3OE5ZQw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"3\",\n    \"name\": \"Microsoft Excel\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8095/entrepreneurship/api/skills/update-skill",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8095",
+							"path": [
+								"entrepreneurship",
+								"api",
+								"skills",
+								"update-skill"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"role\": [\"user\"], // admin || user || gestion || help\n    \"username\": \"souleymanesidibe1995@gmail.com\",\n    \"email\": \"souleymanesidibe1995@gmail.com\",\n    \"phone\": \"778578611\",\n    \"firstname\": \"Souleymane\",\n    \"lastname\": \"SIDIBE\",\n    \"password\": \"Passer@2024\",\n    \"typeOfUsername\": \"email\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8095/entrepreneurship/api/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"entrepreneurship",
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"doumbialassane10@gmail.com\",\n    \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8095/entrepreneurship/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"entrepreneurship",
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8095/entrepreneurship/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8095",
+					"path": [
+						"entrepreneurship",
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
